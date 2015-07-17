@@ -18,21 +18,21 @@ Generation is triggered by `mvn clean package`
 
 ## Updating
 
-* 1. Open the `pom.xml` file and edit the project version.
-* 2. Update using `mvn clean package`
-* 3. Add all modified files:
+* 1) Open the `pom.xml` file and edit the project version.
+* 2) Update using `mvn clean package`
+* 3) Add all modified files:
 
     git add bower.json vertxbus.js
     
-* 4. Commit
+* 4) Commit
     
     git commit -m "update version to $VERSION"
     
-* 5. Create tag
+* 5) Create tag
     
     git tag -a $VERSION -m "tag for version $VERSION"
     
-* 6. Push everything
+* 6) Push everything
     
     git push origin --tags master
     
