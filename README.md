@@ -22,19 +22,27 @@ Generation is triggered by `mvn clean package`
 * 2) Update using `mvn clean package`
 * 3) Add all modified files:
 
-    git add bower.json vertxbus.js
+```
+git add bower.json vertxbus.js
+```
     
 * 4) Commit
-    
-    git commit -m "update version to $VERSION"
-    
+
+```    
+git commit -m "update version to $VERSION"
+
+```    
 * 5) Create tag
-    
-    git tag -a $VERSION -m "tag for version $VERSION"
+
+```
+git tag -a $VERSION -m "tag for version $VERSION"
+```
     
 * 6) Push everything
-    
-    git push origin --tags master
+
+```    
+git push origin --tags master
+```
     
 Done.
     
