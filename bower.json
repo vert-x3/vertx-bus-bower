@@ -23,7 +23,8 @@
   "ignore": [
     "src",
     "target",
-    "pom.xml"
+    "pom.xml",
+    "README.md"
   ],
   "license": "Apache-2.0"
 }

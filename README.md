@@ -2,10 +2,8 @@
 The `vertxbus.js` file is a SockJS-based event bus bridge to connect your JavaScript frontend application to Vert.x 3.
  This is not a client for Node.js.
 
-
-
-The vert.x web site: http://vertx.io
-The Event Bus Bridge documentation: http://vertx.io/docs/vertx-web/java/#_sockjs_event_bus_bridge
+* The vert.x web site: http://vertx.io
+* The Event Bus Bridge documentation: http://vertx.io/docs/vertx-web/java/#_sockjs_event_bus_bridge
 
 ## Build
 
