@@ -22,7 +22,7 @@ Generation is triggered by `mvn clean package`
 * 2. Update using `mvn clean package`
 * 3. Add all modified files:
 
-    git add bower.js vertxbus.js
+    git add bower.json vertxbus.js
     
 * 4. Commit
     
