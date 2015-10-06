@@ -33,7 +33,7 @@ Generation is triggered by `mvn clean package`
 * 3) Add all modified files:
 
 ```
-git add bower.json vertxbus.js
+git add bower.json vertx-eventbus.js
 ```
 
 * 4) Commit
