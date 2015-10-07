@@ -1,6 +1,6 @@
 {
   "name": "vertx3-eventbus-client",
-  "version": "3.1.0-SNAPSHOT",
+  "version": "3.1.0",
   "homepage": "http://vertx.io",
   "authors": [
     "The Vert.x Team"
