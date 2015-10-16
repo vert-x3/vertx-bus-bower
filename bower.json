@@ -6,7 +6,7 @@
     "The Vert.x Team"
   ],
   "description": "Vert.x 3 Event Bus Client",
-  "main": "vertxbus.js",
+  "main": "vertx-eventbus.js",
   "moduleType": [
     "amd"
   ],
