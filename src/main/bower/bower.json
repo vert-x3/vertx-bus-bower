@@ -1,11 +1,11 @@
 {
   "name": "vertx3-eventbus-client",
-  "version": "${project.version}",
+  "version": "${package.version}",
   "homepage": "http://vertx.io",
   "authors": [
     "The Vert.x Team"
   ],
-  "description": "Vert.x 3 Event Bus Client",
+  "description": "Vert.x Event Bus Client for vert.x ${vertx.version}",
   "main": "vertx-eventbus.js",
   "moduleType": [
     "amd"

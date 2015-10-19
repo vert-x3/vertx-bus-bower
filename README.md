@@ -9,6 +9,10 @@ If you already use a previous version of the bridge, please check the changelog 
 
 ## Changelog
 
+**Changes from the 3.1 to 3.1.1**
+
+* Update the `main` attribute in the `bower.json` file.
+
 **Changes from the 3.0.x to 3.1**
 
 * IMPORTANT: The API has been changed to be compatible with node.js and to be closer to the vert.x eventbus API
@@ -28,9 +32,11 @@ Generation is triggered by `mvn clean package`
 
 ## Updating
 
-* 1) Open the `pom.xml` file and edit the project version.
+* 1) Open the `pom.xml` file and edit the `vertx.version` property (~ project version) and the `package.version` (packaging iteration)
 * 2) Update using `mvn clean package`
 * 3) Add all modified files:
+
+NOTE: the `$VERSION` is the `package.version`
 
 ```
 git add bower.json vertx-eventbus.js
