@@ -23,7 +23,7 @@
     factory(SockJS);
   } else if (typeof define === 'function' && define.amd) {
     // AMD loader
-    define('vertx3bus', ['sockjs'], factory);
+    define('vertx-eventbus', ['sockjs'], factory);
   } else {
     // plain old include
     if (typeof this.SockJS === 'undefined') {
@@ -83,7 +83,13 @@
     this.defaultHeaders = null;
 
     // default event handlers
-    this.onerror = console.error;
+    this.onerror = function (err) {
+      try {
+        console.error(err);
+      } catch (e) {
+        // dev tools are disabled so we cannot use console on IE
+      }
+    };
 
     var sendPing = function () {
       self.sockJSConn.send(JSON.stringify({type: 'ping'}));
@@ -138,7 +144,11 @@
         if (json.type === 'err') {
           self.onerror(json);
         } else {
-          console.warn('No handler found for message: ', json);
+          try {
+            console.warn('No handler found for message: ', json);
+          } catch (e) {
+            // dev tools are disabled so we cannot use console on IE
+          }
         }
       }
     }
@@ -275,7 +285,7 @@
    * Closes the connection to the EvenBus Bridge.
    */
   EventBus.prototype.close = function () {
-    this.state = vertx.EventBus.CLOSING;
+    this.state = EventBus.CLOSING;
     this.sockJSConn.close();
   };
 
