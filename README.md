@@ -9,6 +9,10 @@ If you already use a previous version of the bridge, please check the changelog 
 
 ## Changelog
 
+** Changes from the 3.2 to 3.2.1
+
+* Update the eventbus client version to 3.2.1
+
 ** Changes from the 3.1.1 to 3.2
 
 * Update the eventbus client version to 3.2.0
@@ -43,7 +47,7 @@ Generation is triggered by `mvn clean package`
 NOTE: the `$VERSION` is the `package.version`
 
 ```
-git add bower.json vertx-eventbus.js
+git add bower.json vertx-eventbus.js pom.xml README.md
 ```
 
 * 4) Commit
