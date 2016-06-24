@@ -9,11 +9,11 @@ If you already use a previous version of the bridge, please check the changelog 
 
 ## Changelog
 
-** Changes from the 3.2 to 3.2.1
+**Changes from the 3.2 to 3.2.1**
 
 * Update the eventbus client version to 3.2.1
 
-** Changes from the 3.1.1 to 3.2
+**Changes from the 3.1.1 to 3.2**
 
 * Update the eventbus client version to 3.2.0
 
