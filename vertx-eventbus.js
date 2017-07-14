@@ -75,8 +75,8 @@
     // attributes
     this.pingInterval = options.vertxbus_ping_interval || 5000;
     this.pingTimerID = null;
-    // reconnect off by default
-    this.reconnectInterval = options.vertxbus_reconnect_interval || 0;
+    this.isReconnectEnabled = false;
+    this.reconnectInterval = options.vertxbus_reconnect_interval || 3000;
     this.reconnectTimerID = null;
     this.defaultHeaders = null;
 
@@ -120,7 +120,7 @@
       self.sockJSConn.onclose = function (e) {
         self.state = EventBus.CLOSED;
         if (self.pingTimerID) clearInterval(self.pingTimerID);
-        if (self.reconnectInterval > 0) {
+        if (self.isReconnectEnabled && self.reconnectInterval > 0) {
           self.sockJSConn = null;
           // wrap in function to prevent blowing up stack
           self.reconnectTimerID = setInterval(function () {
@@ -337,6 +337,16 @@
         clearInterval(self.pingTimerID);
         self.pingTimerID = null;
       }
+    }
+  };
+
+  EventBus.prototype.reconnectEnabled = function (enable) {
+    var self = this;
+    
+    self.isReconnectEnabled = enable;
+    if (!enable && self.reconnectTimerID) {
+      clearInterval(self.reconnectTimerID);
+      self.reconnectTimerID = null;
     }
   };
 
