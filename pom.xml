@@ -6,13 +6,13 @@
 
   <groupId>io.vertx</groupId>
   <artifactId>vertxbus-bower</artifactId>
-  <version>3.5.3</version>
+  <version>3.6.0</version>
 
   <packaging>pom</packaging>
 
   <properties>
-    <vertx.version>3.5.4</vertx.version>
-    <package.version>3.5.4</package.version>
+    <vertx.version>3.6.0</vertx.version>
+    <package.version>3.6.0</package.version>
   </properties>
 
   <dependencies>
