@@ -6,7 +6,7 @@
 
   <groupId>io.vertx</groupId>
   <artifactId>vertxbus-bower</artifactId>
-  <version>3.6.3/version>
+  <version>3.6.3</version>
 
   <packaging>pom</packaging>
 
