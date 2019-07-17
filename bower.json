@@ -1,11 +1,19 @@
 {
   "name": "vertx3-eventbus-client",
+<<<<<<< HEAD
   "version": "3.8.0",
+=======
+  "version": "3.7.1",
+>>>>>>> 4b118129f1d6b7a96c03c389fbc15ec47c69030e
   "homepage": "http://vertx.io",
   "authors": [
     "The Vert.x Team"
   ],
+<<<<<<< HEAD
   "description": "Vert.x Event Bus Client for vert.x 3.8.0",
+=======
+  "description": "Vert.x Event Bus Client for vert.x 3.7.1",
+>>>>>>> 4b118129f1d6b7a96c03c389fbc15ec47c69030e
   "main": "vertx-eventbus.js",
   "moduleType": [
     "amd"

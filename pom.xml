@@ -8,6 +8,7 @@
   <artifactId>vertxbus-bower</artifactId>
   <version>3.8.0</version>
 
+
   <packaging>pom</packaging>
 
   <properties>
